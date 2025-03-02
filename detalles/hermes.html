@@ -1,0 +1,92 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes</title>
+    <link rel="stylesheet" href="../stilos/hermes.css">
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <button class="cerrar-btn" onclick="toggleSidebar()">☰</button>
+        <ul>
+            <li>
+                <img src="../images/zeus.jpg" alt="Zeus" onclick="window.location.href='zeus.html'">
+                <p>Zeus</p>
+            </li>
+            <li>
+                <img src="../images/poseidon.jpg" alt="Poseidón" onclick="window.location.href='poseidon.html'">
+                <p>Poseidón</p>
+            </li>
+            <li>
+                <img src="../images/hades.jpg" alt="Hades" onclick="window.location.href='hades.html'">
+                <p>Hades</p>
+            </li>
+            <li>
+                <img src="../images/atenea.webp" alt="Atenea" onclick="window.location.href='atenea.html'">
+                <p>Atenea</p>
+            </li>
+            <li>
+                <img src="../images/ares.jpg" alt="Ares" onclick="window.location.href='ares.html'">
+                <p>Ares</p>
+            </li>
+            <li>
+                <img src="../images/apolo.jpg" alt="Apolo" onclick="window.location.href='apolo.html'">
+                <p>Apolo</p>
+            </li>
+            <li>
+                <img src="../images/hera.jpg" alt="Hera" onclick="window.location.href='hera.html'">
+                <p>Hera</p>
+            </li>
+            <li>
+                <img src="../images/artemisa.jpg" alt="Artemisa" onclick="window.location.href='artemisa.html'">
+                <p>Artemisa</p>
+            </li>
+            <li>
+                <img src="../images/hefesto.webp" alt="Hefesto" onclick="window.location.href='hefesto.html'">
+                <p>Hefesto</p>
+            </li>
+            <li>
+                <img src="../images/afrodita.jpg" alt="Afrodita" onclick="window.location.href='afrodita.html'">
+                <p>Afrodita</p>
+            </li>
+            <li>
+                <img src="../images/hermes.webp" alt="Hermes" onclick="window.location.href='hermes.html'">
+                <p>Hermes</p>
+            </li>
+            <li>
+                <img src="../images/demeter.jpg" alt="Demeter" onclick="window.location.href='demeter.html'">
+                <p>Demeter</p>
+            </li>
+        </ul>
+    </div>
+
+<button class="abrir-btn" onclick="toggleSidebar()">☰</button>
+<button id="inicioBtn" onclick="window.location.href='../indexx/index.html'">Inicio</button>
+
+<div class="contenedor">
+    <h1>Hermes</h1>
+    <img src="../images/hermes.webp" alt="Hermes" class="hermes-img">
+    <p class="bio">
+        Hermes, el veloz mensajero de los dioses, es el dios del comercio, los viajes y los ladrones. Con sus sandalias aladas y su caduceo, es conocido por su astucia y rapidez.
+        Es hijo de Zeus y Maia, y guía las almas al inframundo.
+    </p>
+
+    <div class="galeria">
+        <img src="../images/hermes1.jpg" alt="Hermes" class="extra-img">
+        <img src="../images/hermes2.jpg" alt="Hermes" class="extra-img">
+        <iframe class="video" width="560" height="315" src="https://youtu.be/_JYPMsNBD0w" allowfullscreen></iframe>
+    </div>
+
+    <button class="link-btn" onclick="window.location.href='#'">Ver más sobre Hermes</button>
+    <button onclick="regresar()">Regresar</button>
+</div>
+
+<audio autoplay loop>
+    <source src="../sounds/wind.mp3" type="audio/mpeg">
+</audio>
+
+<script src="../scripts/hermes.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    background: black;
+    color: orange;
+    font-family: 'Creepster', cursive;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0 0 20px red, 0 0 40px orange; 
+}
+
+.contenedor {
+    text-align: center;
+    padding: 20px;
+}
+
+.hefesto-img {
+    width: 100%;
+    max-width: 200px; /* Tamaño más pequeño para la imagen principal */
+    border: 4px solid red;
+    box-shadow: 0 0 20px orange;
+    border-radius: 20px;
+    animation: fuego 2s infinite alternate;
+}
+
+@keyframes fuego {
+    0% { box-shadow: 0 0 20px red; }
+    100% { box-shadow: 0 0 40px orange; }
+}
+
+.bio {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border: 2px solid red;
+    box-shadow: 0 0 15px orange;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.extra-img {
+    width: 100%;
+    max-width: 200px;
+    border: 3px solid red;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.extra-img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px orange;
+}
+
+.video {
+    width: 100%;
+    max-width: 560px;
+    border: 3px solid red;
+    box-shadow: 0 0 20px orange;
+    border-radius: 15px;
+}
+
+button {
+    background: red;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 15px orange;
+}
+
+button:hover {
+    background: orange;
+    box-shadow: 0 0 30px red;
+}
+
+.sidebar {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px red;
+    transition: left 0.5s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar li {
+    margin: 20px 0;
+}
+
+.sidebar img {
+    width: 80%;
+    max-width: 100px;
+    border: 3px solid red;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.sidebar img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px orange;
+}
+
+.sidebar p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.abrir-btn, .cerrar-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 0 0 15px orange;
+    border-radius: 50%;
+}
+
+.abrir-btn:hover, .cerrar-btn:hover {
+    background: orange;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .contenedor {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .hefesto-img {
+        max-width: 200px; /* Más pequeño para pantallas pequeñas */
+    }
+}
+
+#inicioBtn {
+    background: #f5c6d4; /* Rosa suave */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #f2a0a1;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Posición a la derecha */
+    z-index: 100; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+#inicioBtn:hover {
+    background: #f2a0a1; /* Rosa cálido */
+    box-shadow: 0 0 30px #f5c6d4;
+}

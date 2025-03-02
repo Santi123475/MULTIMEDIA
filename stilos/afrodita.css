@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    background: #f8e1e1; /* Rosa suave como fondo */
+    color: #f2a0a1; /* Rosa cálido para el texto */
+    font-family: 'Creepster', cursive;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0 0 15px #f2a0a1, 0 0 30px #fcb0b0; /* Brillo suave en rosa */
+    color: #e4a1d5; /* Rosa delicado */
+}
+
+.contenedor {
+    text-align: center;
+    padding: 20px;
+}
+
+.afrodita-img {
+    width: 100%;
+    max-width: 250px;
+    border: 4px solid #f5c6d4; /* Rosa claro */
+    box-shadow: 0 0 15px #f2a0a1;
+    border-radius: 20px;
+    animation: sombras 2s infinite alternate;
+}
+
+@keyframes sombras {
+    0% { box-shadow: 0 0 20px #f5c6d4; }
+    100% { box-shadow: 0 0 40px #f2a0a1; }
+}
+
+.bio {
+    background: rgba(255, 255, 255, 0.9); /* Blanco translúcido */
+    padding: 20px;
+    border: 2px solid #f5c6d4; /* Rosa suave */
+    box-shadow: 0 0 15px #f2a0a1;
+    margin-top: 20px;
+    text-align: justify;
+    color: #f2a0a1;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.extra-img {
+    width: 100%;
+    max-width: 200px;
+    border: 3px solid #f5c6d4; /* Rosa suave */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 15px #f2a0a1;
+}
+
+.extra-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #f2a0a1; /* Brillo rosa al hacer hover */
+}
+
+.video {
+    width: 100%;
+    max-width: 560px;
+    border: 3px solid #f5c6d4;
+    box-shadow: 0 0 20px #f2a0a1;
+    border-radius: 15px;
+}
+
+button {
+    background: #f2a0a1; /* Rosa cálido */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 15px #f5c6d4;
+    color: white;
+}
+
+button:hover {
+    background: #f5c6d4; /* Rosa suave al pasar el cursor */
+    box-shadow: 0 0 30px #f2a0a1;
+    color: black;
+}
+
+.sidebar {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    box-shadow: 0 0 20px #f2a0a1;
+    transition: left 0.5s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar li {
+    margin: 20px 0;
+}
+
+.sidebar img {
+    width: 80%;
+    max-width: 100px;
+    border: 3px solid #f5c6d4;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 15px #f2a0a1;
+}
+
+.sidebar img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px #f2a0a1; /* Brillo rosado */
+}
+
+.sidebar p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #f2a0a1;
+}
+
+.abrir-btn, .cerrar-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #f5c6d4; /* Rosa suave */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 0 0 15px #f2a0a1;
+    border-radius: 50%;
+}
+
+.abrir-btn:hover, .cerrar-btn:hover {
+    background: #f2a0a1; /* Rosa cálido */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .contenedor {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .afrodita-img {
+        max-width: 200px;
+    }
+}
+
+#inicioBtn {
+    background: #f5c6d4; /* Rosa suave */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #f2a0a1;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Posición a la derecha */
+    z-index: 100; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+#inicioBtn:hover {
+    background: #f2a0a1; /* Rosa cálido */
+    box-shadow: 0 0 30px #f5c6d4;
+}

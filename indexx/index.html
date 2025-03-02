@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dioses del Olimpo</title>
+    <link rel="stylesheet" href="../stilos/styless.css">
+</head>
+<body>
+    <!-- Sonido de fondo en bucle -->
+    <audio id="olympus-sound" loop autoplay>
+        <source src="sonido/olympus-sound.mp3" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <h1>Los 12 Dioses del Olimpo</h1>
+    <div class="tarjetas-container" id="tarjetasContainer"></div>
+    
+    <div id="modal" class="modal oculto" onclick="cerrarModal(event)">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <img id="modalImagen" src="" alt="Imagen del Dios">
+            <h1 id="modalNombre"></h1>
+            <p id="modalDescripcion"></p>
+            <button id="masInfoBtn">Más información</button>
+        </div>
+    </div>
+    
+    <script src="../scripts/script.js" defer></script>
+</body>
+</html>
