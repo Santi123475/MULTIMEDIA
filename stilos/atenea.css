@@ -20,6 +20,17 @@ h1 {
     padding: 20px;
 }
 
+
+.atenea-img{
+    width: 100%;
+    max-width: 250px;
+    border: 4px solid grey;
+    box-shadow: 0 0 20px white;
+    border-radius: 20px;
+    animation: sombras 2s infinite alternate;
+}
+
+
 .hades-img {
     width: 100%;
     max-width: 250px;
@@ -172,13 +183,13 @@ button:hover {
     }
 }
 #inicioBtn {
-    background: #f5c6d4; /* Rosa suave */
+    background: #53494b; /* Rosa suave */
     color: white;
     padding: 12px 20px;
     font-size: 1.2rem;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 15px #f2a0a1;
+    box-shadow: 0 0 15px #f6f5f5;
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s;
     position: fixed;
@@ -191,3 +202,5 @@ button:hover {
     background: #f2a0a1; /* Rosa cálido */
     box-shadow: 0 0 30px #f5c6d4;
 }
+
+

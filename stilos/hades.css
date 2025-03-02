@@ -170,13 +170,13 @@ button:hover {
     }
 }
 #inicioBtn {
-    background: #f5c6d4; /* Rosa suave */
+    background: #7c0878; /* Rosa suave */
     color: white;
     padding: 12px 20px;
     font-size: 1.2rem;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 15px #f2a0a1;
+    box-shadow: 0 0 15px #8c0808;
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s;
     position: fixed;
