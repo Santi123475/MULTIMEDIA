@@ -1,5 +1,5 @@
 function regresar() {
-    window.location.href = "../indexx/index.html";
+    window.location.href = "../index.html";
 }
 
 function toggleSidebar() {

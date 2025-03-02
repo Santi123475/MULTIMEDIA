@@ -12,7 +12,7 @@ class GestorDioses {
             { nombre: "Hefesto", imagen: "images/hefesto.webp", descripcion: "Dios del fuego y la forja." },
             { nombre: "Afrodita", imagen: "images/afrodita.jpg", descripcion: "Diosa del amor y la belleza." },
             { nombre: "Hermes", imagen: "images/hermes.webp", descripcion: "Dios mensajero y del comercio." },
-            { nombre: "Deméter", imagen: "images/demeter.jpg", descripcion: "Diosa de la agricultura y la cosecha." }
+            { nombre: "Demeter", imagen: "images/demeter.jpg", descripcion: "Diosa de la agricultura y la cosecha." }
         ];
         this.tarjetasContainer = document.getElementById("tarjetasContainer");
         this.cargarTarjetas();
