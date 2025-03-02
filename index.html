@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="stilos/styless.css">
 </head>
 <body>
-    <!-- Sonido de fondo en bucle -->
-    <audio id="olympus-sound" loop autoplay>
-        <!-- Cambiar la ruta del sonido -->
-        <source src="sonido/olympus-sound.mp3" type="audio/mp3">
-        Tu navegador no soporta la etiqueta de audio.
+
+    <audio autoplay loop muted>
+        <source src="sounds/sky.mp3" type="audio/mpeg">
     </audio>
 
     <h1>Los 12 Dioses del Olimpo</h1>
@@ -26,10 +24,15 @@
             <button id="masInfoBtn">Más información</button>
         </div>
     </div>
+
+    <footer>
+        <button id="botonSonido" class="btn-sonido">🔊 Desactivar Sonido</button>
+    </footer>
+
+
     <footer>
         <p>&copy; 2025 Santiago Sosa Marín</p>
     </footer>
-    <!-- Cambiar la ruta del script -->
     <script src="scripts/script.js" defer></script>
 </body>
 </html>

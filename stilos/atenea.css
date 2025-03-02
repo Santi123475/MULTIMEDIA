@@ -203,4 +203,24 @@ button:hover {
     box-shadow: 0 0 30px #f5c6d4;
 }
 
+#botonSonido {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(220, 218, 214);
+    font-family: 'Creepster', cursive; 
+    cursor: pointer;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, background 0.3s ease; 
+}
+
+#botonSonido:hover {
+    transform: scale(1.1);
+    background: rgba(213, 213, 11, 0.9); 
+    color: black;
+}
 
