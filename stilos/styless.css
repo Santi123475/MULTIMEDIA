@@ -1,15 +1,14 @@
-/* Estilo general */
 body {
     font-family: 'Creepster', cursive;
     text-align: center;
-    background-color: #f4f4f4; /* Fondo suave */
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-/* Título principal */
+
 h1 {
-    color: #4CAF50; /* Verde oscuro */
+    color: #4CAF50;
     font-size: 3rem;
     margin-top: 20px;
     text-transform: uppercase;
@@ -17,7 +16,7 @@ h1 {
     text-shadow: 2px 2px 4px #c1c1c1, 0 0 25px #4CAF50, 0 0 5px #4CAF50;
 }
 
-/* Contenedor de las tarjetas */
+
 .tarjetas-container {
     display: flex;
     flex-wrap: wrap;
@@ -26,13 +25,13 @@ h1 {
     margin-top: 20px;
 }
 
-/* Estilo de cada tarjeta */
+
 .tarjeta {
-    background-color: #f1c40f; /* Dorado */
+    background-color: #f1c40f;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    width: 180px; /* Aumentar el tamaño para ajustar las fotos */
+    width: 180px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -42,25 +41,25 @@ h1 {
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo de las imágenes dentro de las tarjetas */
+
 .tarjeta img {
     width: 100%;
-    height: 200px; /* Fijar altura para mantener el aspecto */
-    object-fit: cover; /* Asegura que las imágenes se mantengan proporcionales */
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-/* Título dentro de la tarjeta */
+
 .tarjeta h2 {
     color: #2c3e50;
     font-size: 1.4rem;
     margin: 15px 0 10px;
-    background-color: #16a085; /* Verde oscuro */
+    background-color: #16a085;
     padding: 10px 0;
     text-transform: uppercase;
 }
 
-/* Modal de información */
+
 .modal {
     display: flex;
     justify-content: center;
@@ -83,7 +82,7 @@ h1 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagen en el modal */
+
 .modal-contenido img {
     width: 200px;
     height: auto;
@@ -91,24 +90,24 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Título dentro del modal */
+
 .modal-contenido h1 {
-    color: #16a085; /* Verde oscuro */
+    color: #16a085;
     font-size: 2rem;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
-/* Descripción en el modal */
+
 .modal-contenido p {
     font-size: 1.2rem;
     color: #2c3e50;
     margin-bottom: 20px;
 }
 
-/* Botón de más información en el modal */
+
 .modal-contenido button {
-    background-color: #f39c12; /* Dorado brillante */
+    background-color: #f39c12;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -119,10 +118,10 @@ h1 {
 }
 
 .modal-contenido button:hover {
-    background-color: #e67e22; /* Naranja oscuro */
+    background-color: #e67e22;
 }
 
-/* Estilo para el botón de cerrar el modal */
+
 .cerrar {
     font-size: 2rem;
     color: #2c3e50;
@@ -134,10 +133,10 @@ h1 {
 }
 
 .cerrar:hover {
-    color: #e74c3c; /* Rojo */
+    color: #e74c3c;
 }
 
-/* Estilo oculto para el modal */
+
 .oculto {
     display: none;
 }

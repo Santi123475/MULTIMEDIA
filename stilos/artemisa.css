@@ -172,7 +172,7 @@ button:hover {
     }
 }
 #inicioBtn {
-    background: #b6c8cd; /* Rosa suave */
+    background: #b6c8cd;
     color: white;
     padding: 12px 20px;
     font-size: 1.2rem;
@@ -183,12 +183,12 @@ button:hover {
     transition: background 0.3s, box-shadow 0.3s;
     position: fixed;
     top: 20px;
-    right: 20px; /* Posición a la derecha */
-    z-index: 100; /* Asegura que el botón esté por encima de otros elementos */
+    right: 20px;
+    z-index: 100;
 }
 
 #inicioBtn:hover {
-    background: #f2a0a1; /* Rosa cálido */
+    background: #f2a0a1;
     box-shadow: 0 0 30px #f5c6d4;
 }
 
